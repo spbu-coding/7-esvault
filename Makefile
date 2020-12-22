@@ -19,7 +19,7 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) -o $@ $<
 
 $(OBJECTS): $(SOURCES) | $(BUILD_DIR)
-	$(CC) -c $@ $<
+	$(CC) -c -o $@ $<
 
 $(BUILD_DIR): $(SOURCES)
 	mkdir -p $@
