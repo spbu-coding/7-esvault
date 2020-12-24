@@ -41,4 +41,4 @@ $(BUILD_DIR)/log: $(EXECUTABLE) $(TESTS_IN) $(TESTS_OUT)
 	echo $$test_check > $@
 
 clean:
-	rm -rf build/
+	rm -rf $(BUILD_DIR)/
